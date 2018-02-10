@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>cyan0708のgooglechart</title>
+    <title>LeiZaiのgooglechart</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <style>
         .cover {
-            background: url(img/bg1.png);
+            background: url(bg2.jpg);
             background-size: cover;
         }
 
@@ -64,8 +64,119 @@
             })();
 
         </script>
-
+        
         <p>出典:<a href="https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00200356&tstat=000001102495&cycle=0&tclass1=000001102517">e-stat 通信利用動向調査 平成28年通信利用動向調査 世帯構成員編 問１　保有するモバイル端末（M）（対象：全員）</a></p>
+        
+          <div id="target02"></div>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            (function() {
+                'use strict';
+
+                function drawChart() {
+                    var target = document.getElementById('target02');
+                    var data;
+                    var options = {
+                        title: '店頭でのモバイル決済の年代別利用率',
+                    };
+                    var chart = new google.visualization.BarChart(target02);
+                    data = new google.visualization.arrayToDataTable([
+                        ['年代', 'モバイル決済の利用率(%)'],
+                        ['２０～２９歳', 12],
+                        ['３０～３９歳', 14],
+                        ['４０～４９歳', 16],
+                        ['５０～５９歳', 13],
+                        ['６０～６９歳', 6],
+                        
+                    ]);
+
+                  chart.draw(data, options);
+                }
+                google.charts.load('current', {
+                    packages: ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+            })();
+
+
+        </script>
+        
+        <p>出典:<a href="https://www.boj.or.jp/research/brp/psr/data/psrb170620a.pdf">日本銀行　決済機構局　2017年6月 決済システムレポート別冊シリーズ　モバイル決済の現状と課題</a></p>
+
+           <div id="target03"></div>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            (function() {
+                'use strict';
+
+                function drawChart() {
+                    var target = document.getElementById('target03');
+                    var data;
+                    var options = {
+                        title: 'クレジットカード年代別保有率（男性）',
+                    };
+                    var chart = new google.visualization.BarChart(target03);
+                    data = new google.visualization.arrayToDataTable([
+                        ['年代', 'クレジットカードの保有率(%)'],
+                        ['２０～２９歳', 66.1],
+                        ['３０～３９歳', 79.0],
+                        ['４０～４９歳', 83.2],
+                        ['５０～５９歳', 86.2],
+                        ['６０～６９歳', 91.5],
+                        
+                    ]);
+
+                  chart.draw(data, options);
+                }
+                google.charts.load('current', {
+                    packages: ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+            })();
+            
+             </script>
+            
+            <div id="target04"></div>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            (function() {
+                'use strict';
+
+                function drawChart() {
+                    var target = document.getElementById('target04');
+                    var data;
+                    var options = {
+                        title: 'クレジットカード年代別保有率（女性）',
+                    };
+                    var chart = new google.visualization.BarChart(target04);
+                    data = new google.visualization.arrayToDataTable([
+                        ['年代', 'クレジットカードの保有率(%)'],
+                        ['２０～２９歳', 74.9],
+                        ['３０～３９歳', 87.7],
+                        ['４０～４９歳', 90.8],
+                        ['５０～５９歳', 89.7],
+                        ['６０～６９歳', 91.2],
+                        
+                    ]);
+
+                  chart.draw(data, options);
+                }
+                google.charts.load('current', {
+                    packages: ['corechart']
+                });
+                google.charts.setOnLoadCallback(drawChart);
+            })();
+
+
+
+        </script>
+        
+        <p>出典:<a href="http://www.global.jcb/ja/press/news_file/file/20170217.pdf">株式会社ジェーシービー　【クレジットカードに関する総合調査】　2016年度版　調査結果レポート</a></p>
+        
+         <div>
+            <p>
+                以上４つのグラフは、日本における店頭でのモバイル決済の年代別利用率およびそれと最も関係すると考えられる要素、スマートフォンの年代別保有率、クレジットカードの年代保有率をまとめて表したものである。年代別でみるとスマートフォンの保有率が２０代の94.2%が最高で４０代までも79.9%の保有率が保てている。50代以後は低くとなり60代では33.4%に止まっている。<br />しかし、店頭でのモバイル決済の年代別利用率と対照すると保有率が再下位の60代はやはり利用率も最下位の6%となっているが、保有率が４位の40代における利用率は最上位の16%という結果であった。特に保有率が最上位の20代の利用率は60代を除く50代の13%より低く12%と再下位になっている。そこでクレジットカードの年代別保有率で見れば男女20代、男性30代の保有率は他の年代と比べて低く、80％を下回り、特に50代のクレジットカードの所有率は60代の次に2番目に高い。つまり日本におけるモバイル決済の利用率に関しスマートフォンの所有だけでなくほかのキャッシュレス決済手段（特に日本の場合はクレジットカード）の所有という要素にも影響されていると考えられる。</p>
+        </div>
 
     </main>
    
